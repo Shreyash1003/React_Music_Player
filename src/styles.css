@@ -1,0 +1,103 @@
+/* General App Styling */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #282c34;
+  color: white;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Initial Playlist Styling (when no song is playing) */
+.initial-playlist {
+  margin-top: 50px;
+}
+
+.initial-playlist h3 {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Now Playing Styling */
+.now-playing {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.now-playing img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 200px; /* Set a fixed width for the image */
+}
+
+.now-playing h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.now-playing p {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.now-playing button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.now-playing button:hover {
+  background-color: #45a049;
+}
+
+/* Playlist Styles */
+.playlist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.playlist-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #3c3f47;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 250px;
+  transition: background-color 0.3s ease;
+}
+
+.playlist-item:hover {
+  background-color: #4CAF50; /* Hover effect for songs */
+}
+
+.playlist-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.playlist-item h4 {
+  color: white;
+  margin: 0;
+}
+
+/* When the song is selected */
+.playlist-item.selected {
+  background-color: #4CAF50;
+}
+
